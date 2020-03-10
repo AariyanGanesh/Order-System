@@ -49,11 +49,18 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="tstOrder.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OrderClasses\OrderClasses.csproj">
+      <Project>{B028886F-2F60-48D2-8612-BF309514A320}</Project>
+      <Name>OrderClasses</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
